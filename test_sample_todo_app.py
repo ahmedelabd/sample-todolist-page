@@ -21,7 +21,7 @@ driver = webdriver.Remote(
 driver.get("http://localhost:8081")
 driver.find_element_by_name("li3").click()
 
-textbox = driver.find_elemnt_by_name("sampletodotxt")
+textbox = driver.find_elemnt_by_name("sampletodotext")
 textbox.send_keys("Testing")
 driver.find_elemnt_by_id("addbutton").click()
 assert "No results found." not in driver.page_source
