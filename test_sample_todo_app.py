@@ -19,7 +19,7 @@ driver = webdriver.Remote(
     command_executor= url
 )
 driver.get("http://localhost:8081")
-driver.find_elemnt_by_name("li3").click()
+driver.find_element_by_name("li3").click()
 
 textbox = driver.find_elemnt_by_name("sampletodotxt")
 textbox.send_keys("Testing")
